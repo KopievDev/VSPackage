@@ -1,0 +1,11 @@
+framework module VSLib {
+  umbrella header "VSLib.h"
+
+  export *
+  module * { export * }
+}
+
+module VSLib.Swift {
+    header "VSLib-Swift.h"
+    requires objc
+}

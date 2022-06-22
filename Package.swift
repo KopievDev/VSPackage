@@ -11,7 +11,7 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "VSPackage",
+            name: "VSLib",
             targets: ["VSLib"]),
     ],
     dependencies: [
@@ -21,7 +21,7 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .binaryTarget(name: "VSLib", path: "./Sources/VSLib.xcframework")
+        .binaryTarget(name: "VSLib", url: "https://mustdev.ru/VSLib.xcframework.zip", checksum: "c6e6b6b841d33a104b7646881056b3c02187d2fbf51ad6dc8da75a3ea4bbe836")
 
     ]
 )
